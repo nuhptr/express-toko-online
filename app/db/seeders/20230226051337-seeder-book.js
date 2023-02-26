@@ -7,7 +7,7 @@ module.exports = {
       {
         title: "Harry Potter and the Philosopher's Stone",
         author: "J.K. Rowling",
-        image: "/uploads/image 1.png",
+        image: "/uploads/image1.png",
         published: new Date(),
         price: 90,
         stock: 900,
@@ -19,7 +19,7 @@ module.exports = {
       {
         title: "Selena and Nebula",
         author: "Tere Liye",
-        image: "/uploads/image 2.png",
+        image: "/uploads/image2.png",
         published: new Date(),
         price: 90,
         stock: 900,
@@ -31,7 +31,7 @@ module.exports = {
       {
         title: "Pelukis bisu (the silent painter)",
         author: "Alexandra Bracken",
-        image: "/uploads/image 3.png",
+        image: "/uploads/image3.png",
         published: new Date(),
         price: 90,
         stock: 900,
@@ -43,7 +43,7 @@ module.exports = {
       {
         title: "Kecamuk darah (Trouble blood)",
         author: "Laksmi Pamuntjak",
-        image: "/uploads/image 4.png",
+        image: "/uploads/image4.png",
         published: new Date(),
         price: 90,
         stock: 900,
@@ -55,7 +55,7 @@ module.exports = {
       {
         title: "Kitab Kawin (edisi terbaru)",
         author: "Robert Kiyosaki",
-        image: "/uploads/image 5.png",
+        image: "/uploads/image5.png",
         published: new Date(),
         price: 90,
         stock: 900,
@@ -67,7 +67,7 @@ module.exports = {
       {
         title: "Salvation of a saint",
         author: "Keigo Higashino",
-        image: "/uploads/image 6.png",
+        image: "/uploads/image6.png",
         published: new Date(),
         price: 90,
         stock: 900,
