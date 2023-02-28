@@ -6,6 +6,9 @@ const logger = require("morgan");
 const authRouter = require("./app/api/auth/router");
 const categoriesRouter = require("./app/api/categories/router");
 const booksRouter = require("./app/api/books/router");
+const uploadRouter = require("./app/api/uploads/router");
+const checkoutsRouter = require("./app/api/checkouts/router");
+const transactionRouter = require("./app/api/transaction/router");
 
 const URL = "/api/v1";
 
@@ -17,13 +20,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/", function (req, res) {
-  res.status(200).json({
-    message: "Welcome to api toko buku",
-  });
-});
 app.use(`${URL}`, authRouter);
 app.use(`${URL}`, categoriesRouter);
 app.use(`${URL}`, booksRouter);
+app.use(`${URL}`, uploadRouter);
+app.use(`${URL}`, checkoutsRouter);
+app.use(`${URL}`, transactionRouter);
 
 module.exports = app;

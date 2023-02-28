@@ -15,6 +15,9 @@ $ npm i bcryptjs
 # jsonwebtokens
 $ npm install jsonwebtoken
 
+# multer
+$ npm install multer (look at middleware/multer)
+
 # sequelize-cli
 $ npm install --save-dev sequelize-cli
 create file .sequelizerc -> configure path every config
