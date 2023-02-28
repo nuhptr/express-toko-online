@@ -9,6 +9,7 @@ const booksRouter = require("./app/api/books/router");
 const uploadRouter = require("./app/api/uploads/router");
 const checkoutsRouter = require("./app/api/checkouts/router");
 const transactionRouter = require("./app/api/transaction/router");
+const router = require("./app/api/auth/router");
 
 const URL = "/api/v1";
 
@@ -19,6 +20,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
+
+router.get("/", (req, res) => {
+  res.send("Test Api!");
+});
 
 app.use(`${URL}`, authRouter);
 app.use(`${URL}`, categoriesRouter);
